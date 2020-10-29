@@ -44,7 +44,7 @@
     $\forall \varepsilon > 0  \exists N_{\varepsilon} \in N : \forall_n> N_{\varepsilon} |a_n - a| < \varepsilon$ \\
     $ \lim_{n\to\infty} a_n \ = a$  или $a_n \to a$ при $n \to \infty$
     \item \textbf{Единственность предела}
-    Пусть  $\lim_{n \to \infty} a_n\ = a$ и $\lim_{n \to \infty} b_n\ = b$, тогда a = b. \\
+    Пусть  $\lim_{n \to \infty} a_n\ = a$ и $\lim_{n \to \infty} a_n\ = b$, тогда a = b. \\
     \textbf{Доказательство:} Если $a \neq b$, то $|a - b| = \varepsilon_0 > 0$. Но по определению найдется номер $N_1$, для которого $|a_n - a| < \frac{\varepsilon_0}{2}$ при $n > N_1$ и найдется номер $N_2$, для которого $|a_n - b| < \frac{\varepsilon_0}{2}$ при $n > N_2$. Тогда при $n > max \{N_1, N_2\} : \varepsilon_0 = |a - b| = |a - a_n + a_n - b| \leq |a - a_n| + |a_n - b| < \varepsilon_0$. Противоречие.
     \item \textbf{Арифметика предела.}
     $\lim_{n \to \infty} a_n\ = a$  $\lim_{n \to \infty} b_n\ = b$\\
@@ -72,7 +72,7 @@
 \textbf{Доказательство:} Предположим, что $a-b = \varepsilon > 0$. Тогда найдутся номера $N_1 \in N$ и $N_2 \in N$, для которых $|a_n - a| < \frac{\varepsilon}{2}$ при $n > N_1$, и $|b_n-b| < \frac{\varepsilon}{2}$ при $n > N_2$. Тогда $\varepsilon = a - b = a - a_n + a_n - b_n + b_n - b \leq a - a_n + b_n - b < \varepsilon$. Противоречие. 
 
 \item \textbf{ Лемма о зажатой последовательности} \\
-Пусть $\lim_{n \to \infty}{a_n = a}$ и $\lim_{n \to \infty}{b_n = b}$ и для некоторого $n \in N$ выполнено неравенство: $a_n \leq c_n \leq b_n$ при $n > N$. Тогда $\lim_{n \to \infty}{c_n = a}$. \\
+Пусть $\lim_{n \to \infty}{a_n = a}$ и $\lim_{n \to \infty}{b_n = a}$ и для некоторого $n \in N$ выполнено неравенство: $a_n \leq c_n \leq b_n$ при $n > N$. Тогда $\lim_{n \to \infty}{c_n = a}$. \\
 \textbf{Доказательство:} Для каждого $\varepsilon > 0$ найдутся номера $N_1 \in N$ и $N_2 \in N$, для которых $|a_n - a| < \varepsilon$ и $|b_n - b| < \varepsilon$. Тогда при $n > max\{N, N_1, N_2\}$ выполнено: $a - \varepsilon < a_n \leq c_n \leq b_n < b + \varepsilon$.
 
 \item \textbf{Принцип вложенных отрезков} \\
